@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from './GameBoard.module.css';
+import * as styles from './GameBoard.module.css';
 import { initializeGameBoard } from './GameBoard.logic';
 
 interface GameBoardProps {
@@ -19,7 +19,6 @@ const GameBoard: React.FC<GameBoardProps> = ({ width = 800, height = 600 }) => {
     <div className={styles.gameBoardContainer}>
       <div className={styles.gameBoard} style={{ width, height }}>
         <div className={styles.felt}>
-          <div className={styles.centerSpot} />
         </div>
       </div>
     </div>
